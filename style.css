@@ -1,0 +1,25 @@
+#page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 40px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.progress-bar-progress {
+  background-color: blue;
+  /* width: 80%; */
+  height: 40px;
+}
+
+#countdown {
+  font-size: 80px;
+  height: 80px;
+  text-align: center;
+}
