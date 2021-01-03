@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 .progress-bar-progress {
-  background: linear-gradient(to right, red , hotpink);
+  background: linear-gradient(to right, red, hotpink);
   height: 40px;
 }
 
@@ -36,14 +36,33 @@ h1 {
 
 .btn {
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
-  padding: 15px;
-  border-radius: 25px;
-  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
   background: none;
   margin: 0 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #dcdcdc;
+  background: #dcdcdc;
+}
+
+.btn-secondry {
+  border: none;
+  color: white;
+  background: hotpink;
+}
+
+.btn-secondry:hover {
+  color: white;
+  border: none;
+  background: #ffb4d9;
 }
 
 .fa {
