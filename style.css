@@ -33,6 +33,12 @@ h1 {
 .countdown {
   height: 80px;
   text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.btn-container {
+  margin-bottom: 40px;
 }
 
 .btn {

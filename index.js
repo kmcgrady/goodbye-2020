@@ -28,9 +28,9 @@ $(function () {
   let $pageWrapper = $("#page-wrapper");
   $pageWrapper.on("click", "button", function (event) {
     if (event.target.id === "increment") {
-      currentDay += 1;
+      currentDay += 10;
     } else if (event.target.id === "decrement") {
-      currentDay -= 1;
+      currentDay -= 10;
     }
     setProgress();
   });
@@ -39,12 +39,13 @@ $(function () {
   let count;
 
   $("#initiateCountdown").click(function () {
-    count = 10;
+    count = 3;
     $("#countdown").text(count);
     interval = setInterval(function () {
       count -= 1;
       if (count === 0) {
         $("#countdown").text("Happy New Year!");
+        $("#page-title").text("This fucking year is finally over!");
         clearInterval(interval);
       } else {
         $("#countdown").text(count);
