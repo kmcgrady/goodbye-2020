@@ -9,9 +9,15 @@ $(function () {
     $progress.animate({ width: yearPercentage + "%" });
   }
   setProgress();
-  let $increamentButton = $('#increment');
-  $increamentButton.click(function() {
-    currentDay += 1;
+  let $increamentButton = $("#increment");
+  $increamentButton.click(function () {
+    currentDay += 10;
+    setProgress();
+  });
+
+  let $decreamentButton = $("#decrement");
+  $decreamentButton.click(function (event) {
+    currentDay -= 10;
     setProgress();
   });
 });
