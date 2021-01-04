@@ -1,4 +1,15 @@
-#page-wrapper {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.page-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,20 +17,61 @@
 }
 
 .progress-bar {
-  width: 80%;
+  width: 80vw;
   height: 40px;
-  border: 2px solid black;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  outline: 1px solid #dcdcdc;
+  outline-offset: 10px;
 }
 
 .progress-bar-progress {
-  background-color: blue;
-  /* width: 80%; */
+  background: linear-gradient(to right, red, hotpink);
   height: 40px;
+  /* width: 30%; */
 }
 
-#countdown {
-  font-size: 80px;
+.countdown {
   height: 80px;
   text-align: center;
+  font-size: 3em;
+  font-weight: 100;
+}
+
+.btn-container {
+  margin-bottom: 40px;
+}
+
+.btn {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  background: none;
+  margin: 0 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: white;
+  border: 1px solid #dcdcdc;
+  background: #dcdcdc;
+}
+
+.btn-secondry {
+  border: none;
+  color: white;
+  background: hotpink;
+}
+
+.btn-secondry:hover {
+  color: white;
+  border: none;
+  background: #ffb4d9;
+}
+
+.fa {
+  padding-right: 10px;
 }
