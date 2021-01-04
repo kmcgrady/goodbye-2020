@@ -27,6 +27,7 @@ h1 {
 .progress-bar-progress {
   background: linear-gradient(to right, red, hotpink);
   height: 40px;
+  /* width: 30%; */
 }
 
 .countdown {
