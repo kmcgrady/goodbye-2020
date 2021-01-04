@@ -8,6 +8,7 @@ $(function () {
     yearPercentage = (currentDay / DAYS_IN_YEAR) * 100;
     $progress.animate({ width: yearPercentage + "%" });
   }
+
   setProgress();
 
   //   let $increamentButton = $("#increment");
@@ -23,13 +24,31 @@ $(function () {
   //   });
 
   //   $decreamentButton.off();
+
   let $pageWrapper = $("#page-wrapper");
   $pageWrapper.on("click", "button", function (event) {
     if (event.target.id === "increment") {
-      currentDay += 10;
+      currentDay += 1;
     } else if (event.target.id === "decrement") {
-      currentDay -= 10;
+      currentDay -= 1;
     }
     setProgress();
+  });
+
+  let interval;
+  let count;
+
+  $("#initiateCountdown").click(function () {
+    count = 10;
+    $("#countdown").text(count);
+    interval = setInterval(function () {
+      count -= 1;
+      if (count === 0) {
+        $("#countdown").text("Happy New Year!");
+        clearInterval(interval);
+      } else {
+        $("#countdown").text(count);
+      }
+    }, 1000);
   });
 });
